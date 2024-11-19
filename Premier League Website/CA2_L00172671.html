@@ -1,0 +1,161 @@
+<!-- Client Side Development Asssignemnt 2
+Oisin Gibson - L00172671 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Fixtures and Results 2021</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header section with the logo and title -->
+    <header>
+        <h1>
+            <!-- Premier League logo -->
+            <img src="C:\Users\L00172671\OneDrive - Atlantic TU\Year 2\Semester 4\Client Side Develompemt\CA 2\logo\PremierLeagueLogo.png"
+                alt="Logo" style="width:170px;height:170px;margin-right:15px;">
+            <!-- Title -->
+            Premier League Football Fixtures and Results 2021
+        </h1>
+    </header>
+
+    <!-- Container for main content -->
+    <div class="container-fluid">
+        <!-- Left div for news, weather, and dropdowns -->
+        <div class="left-div">
+            <!-- Placeholder for news and weather content -->
+            <p id="newsAndWeatherTitle">News & Weather Reports</p>
+            <!-- Combined container for weather and world news dropdowns -->
+            <div class="dropdown-container">
+                <!-- Weather dropdown -->
+                <div class="dropdown">
+                    <button class="dropbtn">Weather</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="irishBttn">Met Eireann</a>
+                        <a href="#" class="london">Manchester</a>
+                        <a href="#" class="nIreland">New York</a>
+                        <a href="#" class="foxBttn">Fox</a>
+                        <a href="#" class="japanBttn">Japan</a>
+                        <a href="#" class="newCastleBttn">New Castle</a>
+                    </div>
+                </div>
+                <!-- World News dropdown -->
+                <div class="dropdown">
+                    <button class="dropbtn">World News</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="rteBttn">RTE</a>
+                        <a href="#" class="skyBttn">SKY</a>
+                        <a href="#" class="nytBttn">New York Times</a>
+                        <a href="#" class="letterkennyBttn">Letterkenny</a>
+                        <a href="#" class="ndtvBttn">CBS</a>
+                        <a href="#" class="abcBttn">ABC</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Placeholder for weather and news content -->
+            <div class="content-container">
+                <p class="weather"><b>Forecast</b></p>
+                <p class="news"><b>Headlines</b></p>
+            </div>
+            <!-- League table container -->
+            <div id="leagueTableContainer" class="table-container">
+                <p id="scoreTableTitle">2021 League Table</p>
+                <!-- League table structure -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team</th>
+                            <th>Played</th>
+                            <th>Won</th>
+                            <th>Lost</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leagueTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Middle div for search inputs and results table -->
+    <div class="middle-div">
+        <!-- Placeholder for input field -->
+        <p id="inputFieldTitle">Find Your Results</p>
+        <div class="btn-group">
+            <!-- Search by Month -->
+            <!-- <p>Search by Month </p> -->
+            <input type="search" id="monthSearch" placeholder="Search by Month">
+            <button onclick="monthFunction()">Search <i class="fa fa-soccer-ball-o"></i></button>
+            <!-- Search by Week -->
+            <!-- <p> Search by Week </p> -->
+            <input type="search" id="weekSearch" placeholder="Search by Week">
+            <button onclick="weekFunction()">Search <i class="fa fa-soccer-ball-o"></i></button>
+            <!-- Search by Team -->
+            <!-- <p> Search by Team </p> -->
+            <input type="search" id="teamSearch" placeholder="Search by Team">
+            <button onclick="teamFunction()">Search <i class="fa fa-soccer-ball-o"></i></button>
+            <!-- Display all fixtures -->
+            <button id="displayScoresButton">Display Scores</button>
+            <!-- Clear the ResultsTable -->
+            <button onclick="clearResultsTable()">Clear Results</button>
+        </div>
+        <!-- Right div for fixtures and scores -->
+        <!-- Table to display results -->
+        <div id="scoreTableContainer" class="table-container">
+            <p id="scoreTableTitle">2021 Season Fixtures and Results</p>
+            <table id="scoreTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Round Number</th>
+                        <th>Home Team</th>
+                        <th>Home Score</th>
+                        <th>Away Team</th>
+                        <th>Away Score</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <!-- External JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="CA_script.js"></script>
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright notice -->
+        <p>© 2021 Premier League</p>
+        <!-- Social media icons with links -->
+        <p class="footer-icons">
+            <!-- Facebook icon with link -->
+            <a href="https://www.facebook.com/premierleague/" class="fa fa-facebook"
+                style="background-color: blue;"></a>
+            <!-- Twitter icon with link -->
+            <a href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="fa fa-twitter" style="background-color: #00acee;"></a>
+            <!-- Instagram icon with link -->
+            <a href="https://www.instagram.com/premierleague/" class="fa fa-instagram"
+                style="background-color: red;"></a>
+        </p>
+    </footer>
+</body>
+
+</html>

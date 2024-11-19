@@ -1,0 +1,722 @@
+/* Styling for h1 tag */
+h1 {
+    color: white;
+    /* Text color */
+    border: 2px black;
+    /* Border color and thickness (Note: missing border-style) */
+    background-color: #301934;
+    /* Background color */
+    padding: 10px;
+    /* Padding around the content */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflowed text */
+    text-overflow: ellipsis;
+    /* Show an ellipsis (...) if text overflows */
+    border-radius: 10px;
+    /* Rounded corners for the border */
+}
+
+h2 {
+    color: black;
+    padding: 5px black;
+    text-align: center;
+    /* Center align h2 text */
+
+}
+
+
+/* Styling for footer */
+footer {
+    display: flex;
+    justify-content: center;
+    /* Center align footer content */
+    padding: 5px;
+    /* Padding around the footer content */
+    background-color: #301934;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    align-items: center;
+}
+
+/* Styling for img inside h1 */
+h1 img {
+    width: 170px;
+    /* Image width */
+    height: 170px;
+    /* Image height */
+    margin-right: 15px;
+    /* Margin on the right side of the image */
+    border-radius: 10px;
+    /* Rounded border for the image */
+}
+
+/* Styling for main content container */
+.container-fluid {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Space between elements */
+    align-items: center;
+    /* Center align items vertically */
+    padding: 20px;
+    /* Padding around the container */
+}
+
+/* Styling for left, middle, and right divs */
+/* .left-div, */
+.middle-div,
+.right-div {
+    flex: 1;
+    /* Equal width for all divs */
+    border: 2px solid black;
+    /* Add black border */
+    padding: 10px;
+    /* Add padding */
+    margin: 0 10px;
+    /* Add margin to create space between the divs */
+}
+
+/*Styling for left div*/
+.left-div {
+    flex: 1;
+    /* Equal width for all divs */
+    border: 2px solid black;
+    /* Add black border */
+    padding: 10px;
+    /* Add padding */
+    margin: 0 10px 20px;
+    /* Add margin to create space between the divs */
+}
+
+/* Styling for social media icons */
+.footer-icons a {
+    display: inline-block;
+    /* Display icons side by side */
+    margin-left: 10px;
+    /* Add spacing between icons */
+    font-size: 24px;
+    /* Increase icon size */
+    width: 40px;
+    /* Set width to create equal spacing */
+    height: 40px;
+    /* Set height to create equal spacing */
+    text-align: center;
+    /* Center align icon content */
+    line-height: 40px;
+    /* Center align vertically */
+    border-radius: 50%;
+    /* Make the icons circular */
+    border: 2px solid white;
+    /* Add white border */
+    box-sizing: border-box;
+    /* Include border in the width and height */
+}
+
+/* Styling for individual social media icons */
+.fa {
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Styling for social media icons */
+.footer-icons {
+    text-align: right;
+    /* Align icons to the right */
+}
+
+/* Styling for table */
+table {
+    font-family: arial, sans-serif;
+    /* Specify font family */
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 100%;
+    /* Full width */
+}
+
+/* Styling for table cells */
+td,
+th {
+    border: 1px solid #CBC3E3;
+    /* Border color and thickness */
+    text-align: left;
+    /* Align text to left */
+    padding: 8px;
+    /* Padding inside cells */
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+    background-color: #CBC3E3;
+    /* Background color for even rows */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #301934;
+    /* Background color */
+    color: white;
+    /* Text color */
+}
+
+/* Styling for input fields */
+input {
+    border: 1px solid black;
+    /* Border color */
+    background-color: #CBC3E3;
+    /* Background color */
+    text-align: left;
+    /* Align text to left */
+    padding: 8px;
+    /* Padding inside input fields */
+}
+
+/* Styling for title elements */
+#scoreTableTitle,
+#newsAndWeatherTitle,
+#allSesonScoresTitle,
+#inputFieldTitle {
+    background-color: #301934;
+    /* Background color */
+    text-align: center;
+    /* Center align text */
+    padding: 8px;
+    /* Padding around the content */
+    color: white;
+    /* Text color */
+    border: 2px black;
+    /* Border color and thickness */
+    padding: 10px;
+    /* Padding around the content */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflowed text */
+}
+
+/* Style for the table container */
+#scoreTableContainer {
+    max-height: 400px;
+    /* Adjust the max height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrollbar when content exceeds the container height */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+/* Optional: Add padding to the table to prevent scrollbar overlap */
+#scoreTable {
+    padding-right: 15px;
+    /* Adjust as needed to prevent overlap */
+}
+
+/* Styling for the table cells */
+#scoreTable td,
+#scoreTable th {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+}
+
+/* Styling for buttons in the left div */
+.left-div .newsBtn {
+    display: block;
+    /* Display as block element */
+    width: 100%;
+    /* Set button width to fill the container */
+    margin-bottom: 10px;
+    /* Add bottom margin for spacing */
+}
+
+/* Styling for weather and news paragraphs */
+#weather,
+#news {
+    border: 2px solid black;
+    /* Add a black border */
+    padding: 10px;
+    /* Add padding */
+}
+
+/* Styling for the output element */
+#output {
+    border: 2px solid black;
+    /* Add a black border */
+    padding: 10px;
+    /* Add padding */
+    margin-bottom: 20px;
+    /* Add margin at the bottom */
+}
+
+/* Styling for middle div */
+.middle-div {
+    flex: 1;
+    /* Equal width for all divs */
+    border: 2px solid black;
+    /* Add black border */
+    padding: 10px;
+    /* Add padding */
+    margin: 0 10px;
+    /* Add margin to create space between the divs */
+}
+
+/* Styling for input fields and buttons in the middle div */
+.middle-div input,
+.middle-div button {
+    margin-bottom: 10px;
+    /* Add equal space between input fields and buttons */
+}
+
+/* Styling for right div */
+.right-div {
+    flex: 1;
+    /* Equal width for all divs */
+    border: 2px solid black;
+    /* Add black border */
+    padding: 5px;
+    /* Reduce padding */
+    margin: 0 10px;
+    /* Add margin to create space between the divs */
+}
+
+/* Styling for the table cells in the right div */
+#scoreTable td,
+#scoreTable th {
+    font-size: 12px;
+    /* Reduce the font size */
+    padding: 5px;
+    /* Reduce padding */
+}
+
+/* Styling for buttons in the left div */
+.btn-left {
+    width: 100%;
+    /* Set button width to fill the container */
+    margin-bottom: 10px;
+    /* Add bottom margin for spacing */
+    height: auto;
+    /* Make height auto to fit content */
+}
+
+/* Style for the table container in the middle div */
+#resultsTableContainer,
+#newTableContainer,
+#weatherTableContainer,
+#newsTable,
+#weather,
+#news {
+    max-height: 400px;
+    /* Adjust the max height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrollbar when content exceeds the container height */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+/* Styles for dropdown button (Weather and News) */
+.dropbtnW,
+.dropbtnN {
+    background-color: #301934;
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 16px;
+    /* Padding */
+    font-size: 16px;
+    /* Font size */
+    border: none;
+    /* No border */
+    cursor: pointer;
+    /* Cursor style */
+}
+
+/* Hover and focus effects for dropdown button */
+.dropbtnW:hover,
+.dropbtnN:focus {
+    background-color: #CBC3E3;
+    /* Background color on hover/focus */
+}
+
+/* Styling for dropdown menu */
+.dropdown {
+    position: relative;
+    /* Position relative for dropdown content */
+    display: inline-block;
+    /* Display as inline-block */
+}
+
+/* Styling for dropdown content (Weather) */
+.dropdown-contentW {
+    display: none;
+    /* Initially hide dropdown content */
+    position: absolute;
+    /* Position absolute */
+    background-color: #f1f1f1;
+    /* Background color */
+    min-width: 160px;
+    /* Minimum width */
+    overflow: auto;
+    /* Enable overflow */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Box shadow */
+    z-index: 1;
+    /* Set z-index */
+}
+
+/* Styling for dropdown content (News) */
+.dropdown-contentN {
+    display: none;
+    /* Initially hide dropdown content */
+    position: absolute;
+    /* Position absolute */
+    background-color: #f1f1f1;
+    /* Background color */
+    min-width: 160px;
+    /* Minimum width */
+    overflow: auto;
+    /* Enable overflow */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Box shadow */
+    z-index: 1;
+    /* Set z-index */
+}
+
+/* Styling for dropdown links */
+.dropdown-contentN a,
+.dropdown-contentW a {
+    color: black;
+    /* Text color */
+    padding: 12px 16px;
+    /* Padding */
+    text-decoration: none;
+    /* Text decoration */
+    display: block;
+    /* Display as block element */
+}
+
+/* Hover effect for dropdown links */
+.dropdown-contentN a:hover,
+.dropdown-contentW a:hover {
+    background-color: #ddd;
+    /* Background color on hover */
+}
+
+/* Display dropdown content when show class is applied */
+.show {
+    display: block;
+    /* Display as block element */
+}
+
+
+.dropbtn {
+    background-color: #301934;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #301934;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #CBC3E3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #301934;
+}
+
+.styled-box {
+    border: 2px solid black;
+    /* Add black border */
+    padding: 10px;
+    /* Add padding */
+    background-color: #f1f1f1;
+    /* Background color */
+    max-height: 200px;
+    /* Set max height */
+    overflow-y: auto;
+    /* Enable vertical scrollbar when content exceeds max height */
+}
+
+.weather-list li {
+    font-size: 14px;
+    /* This sets a smaller font size for all list items */
+}
+
+.news-list li {
+    font-size: 14px;
+    /* This sets a smaller font size for all list items */
+}
+
+.weather-list li h2 {
+    font-size: 12px;
+    /* This sets a smaller font size for the title and publication date */
+}
+
+.news-list li h2 {
+    font-size: 12px;
+    /* This sets a smaller font size for the title and publication date */
+}
+
+/* Styling for the content container */
+.content-container {
+    display: flex;
+    /* Use flexbox layout to align children side by side */
+    justify-content: space-around;
+    /* Distribute space around the elements */
+    align-items: flex-start;
+    /* Align items to the start of the container */
+}
+
+/* Styling for weather and news paragraphs */
+.weather,
+.news {
+    flex: 1;
+    /* Give each paragraph equal width */
+    margin: 10px;
+    /* Add margin for spacing */
+    padding: 10px;
+    /* Add padding for inner spacing */
+    border: 2px solid #301934;
+    /* Add border to match your style */
+    height: 200px;
+    /* Set a fixed height or adjust as needed */
+    overflow: auto;
+    /* Add scroll if content overflows */
+}
+
+/* Styling for the body of the HTML document */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the font family to Arial or a generic sans-serif font */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    background-color: #f1f1f1;
+    /* Set background color to a light gray */
+}
+
+/* Styling for containers with class 'container' */
+.container {
+    display: flex;
+    /* Use flexbox layout for children */
+    justify-content: space-around;
+    /* Horizontally distribute items with equal space around them */
+    align-items: flex-start;
+    /* Align items to the start of the flex container vertically */
+    padding: 20px;
+    /* Add padding inside the container */
+}
+
+/* Styling for containers with class 'table-container' */
+.table-container {
+    flex: 1;
+    /* Allow the container to grow and occupy available space */
+    border: 2px solid black;
+    /* Add a black border around the container */
+    padding: 10px;
+    /* Add padding inside the container */
+    margin-right: 10px;
+    /* Add margin on the right side of the container */
+    background-color: white;
+    /* Set background color to white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+    overflow-y: auto;
+    /* Enable vertical scrollbar if content exceeds the container height */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    max-height: 400px;
+    /* Set maximum height of the container */
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the container */
+}
+
+/* Styling for h2 elements */
+h2 {
+    text-align: center;
+    /* Center align text */
+    margin-bottom: 10px;
+    /* Add margin at the bottom of h2 elements */
+}
+
+/* Styling for table elements */
+table {
+    width: 100%;
+    /* Set table width to 100% of its container */
+    border-collapse: collapse;
+    /* Collapse borders between table cells */
+}
+
+/* Styling for table header cells (th) and regular cells (td) */
+table th,
+table td {
+    border: 1px solid #ddd;
+    /* Add a 1px solid border around cells with a light gray color */
+    padding: 8px;
+    /* Add padding inside cells */
+    text-align: left;
+    /* Align text to the left within cells */
+}
+
+/* Styling for table header cells (th) */
+table th {
+    background-color: #301934;
+    /* Set background color of header cells to dark purple */
+    color: white;
+    /* Set text color of header cells to white */
+}
+
+/* Alternate row background color */
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.news-list h2.date {
+    font-weight: bold;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Stack containers vertically on smaller screens */
+        align-items: center;
+        /* Center align items */
+    }
+
+    #scoreTable {
+        max-width: 100%;
+        /* Full width on smaller screens */
+        margin-bottom: 20px;
+        /* Add margin at the bottom */
+    }
+
+    #leagueTable {
+        font-size: 10px;
+        /* Further reduce font size for smaller screens */
+    }
+}
+
+/* Styling for the table container */
+#leagueTableContainer {
+    max-height: 400px;
+    /* Adjust the max height as needed */
+    overflow-y: auto;
+    /* Enable vertical scrollbar when content exceeds the container height */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+    padding: 10px;
+    /* Add padding around the container */
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the table cells inside leagueTableContainer */
+#leagueTable td,
+#leagueTable th {
+    font-size: 12px;
+    /* Reduce the font size */
+    padding: 6px;
+    /* Reduce padding */
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media(max-width:768px) {
+
+    /* Styles applied to elements with class 'left-div' when the screen width is 768px or less */
+    .left-div {
+        margin: bottom 10px;
+        /* Incorrect property name; should be 'margin-bottom: 10px;' */
+    }
+
+    /* Styles applied to the element with id 'leagueTableContainer' when the screen width is 768px or less */
+    #leagueTableContainer {
+        max-height: none;
+        /* Remove the maximum height constraint for this container */
+    }
+}
+
+
+.btn-group button {
+    background-color: #301934;
+    /* Green background */
+    border: 1px solid 301934;
+    /* Green border */
+    color: white;
+    /* White text */
+    padding: 10px 10px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: center;
+    /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    /* Create a pseudo-element */
+    clear: both;
+    /* Clear floats */
+    display: table;
+    /* Display as table to trigger the clearfix */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Remove right border for all buttons except the last one */
+    /* Prevent double borders */
+}
+
+/* Add a background color on hover for buttons inside .btn-group */
+.btn-group button:hover {
+    background-color: #301934;
+    /* Dark background color on hover */
+}
+
+/* Styling for the dropdown container */
+.dropdown-container {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Space evenly between flex items */
+    align-items: center;
+    /* Align items vertically */
+    margin-bottom: 20px;
+    /* Bottom margin for spacing */
+}
+
+/* Styling for dropdown */
+.dropdown {
+    flex: 1;
+    /* Take up remaining space in the flex container */
+}
